@@ -1,0 +1,59 @@
+.logo {
+  &__whole {
+    height: 28px;
+  }
+
+  &__web {
+    color: $themeColor;
+  }
+
+  &__whole,
+  &__footer {
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
+
+  &__whole:visited,
+  &__footer:visited {
+    color: inherit;
+  }
+
+  &__foter {
+    margin-bottom: 60px;
+    padding: 0;
+    height: 28px;
+  }
+
+  &__web,
+  &__studio {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    &__whole {
+      height: 31px;
+    }
+
+    &__whole,
+    &__footer {
+      font-size: 26px;
+      line-height: 70%;
+    }
+
+    &__footer {
+      margin-bottom: 60px;
+      padding: 0;
+      height: 31px;
+    }
+  }
+}

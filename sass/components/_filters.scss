@@ -1,0 +1,99 @@
+.filters {
+  height: 91px;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.filters__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-width: 0;
+  border-radius: 4px;
+  height: 38px;
+  transition-property: color, background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
+
+  &:hover {
+    color: #ffffff;
+    background: $themeColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 400px;
+    height: 91px;
+    align-items: flex-start;
+    align-content: space-between;
+  }
+
+  &-all,
+  &-design {
+    width: 103px;
+  }
+
+  &-pages {
+    width: 128px;
+  }
+
+  &-app {
+    width: 145px;
+  }
+
+  &-marketing {
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    height: 38px;
+
+    &__btn-list {
+      width: 768px;
+      height: 38px;
+      flex-wrap: nowrap;
+      margin-left: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    justify-content: center;
+  }
+  .filters__btn {
+    &-list {
+      justify-content: space-between;
+      width: 572px;
+      height: 54px;
+    }
+
+    &-all,
+    &-marketing {
+      width: 121px;
+    }
+
+    &-pages {
+      width: 93px;
+    }
+
+    &-app {
+      width: 114px;
+    }
+
+    &-design {
+      width: 91px;
+    }
+  }
+}
